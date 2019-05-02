@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"node_modules/uniq/uniq.js":[function(require,module,exports) {
+})({"../node_modules/uniq/uniq.js":[function(require,module,exports) {
 "use strict"
 
 function unique_pred(list, compare) {
@@ -181,7 +181,7 @@ var unique = require('uniq');
 
 var myList = unique([1, 1, 1, 1, 1, 1, 2, 2]);
 console.log(myList);
-},{"uniq":"node_modules/uniq/uniq.js"}],"../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"uniq":"../node_modules/uniq/uniq.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -209,7 +209,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50513" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50599" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -384,5 +384,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
+},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
 //# sourceMappingURL=/main.1f19ae8e.js.map
