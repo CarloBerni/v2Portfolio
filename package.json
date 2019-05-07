@@ -18,9 +18,7 @@
     "url": "https://github.com/CarloBerni/v2Portfolio/issues"
   },
   "homepage": "https://github.com/CarloBerni/v2Portfolio#readme",
-  "dependencies": {
-    "uniq": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "sass": "^1.19.0"
   }
