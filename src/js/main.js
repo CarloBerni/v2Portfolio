@@ -29,3 +29,18 @@ $(window).on('mousemove', function(e) {
     $this.css('transform', transformLayer);
   });
 });
+
+
+
+/*
+// adding the plug
+
+
+VANTA.WAVES({
+  el: "#vantajs",
+  color: 0x0,
+  shininess: 150.00,
+  waveSpeed: 0.50,
+  zoom: 0.81
+})
+*/
