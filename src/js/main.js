@@ -33,6 +33,13 @@ $(window).on('mousemove', function(e) {
 
 
 
+$(document).ready(function(){
+  $("a").click(function(){
+    $("#Menu").fadeOut();
+  });
+});
+
+
 // adding the plug
 
 
