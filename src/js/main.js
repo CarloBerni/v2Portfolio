@@ -32,7 +32,7 @@ $(window).on('mousemove', function(e) {
 
 
 
-/*
+
 // adding the plug
 
 
@@ -43,4 +43,4 @@ VANTA.WAVES({
   waveSpeed: 0.50,
   zoom: 0.81
 })
-*/
+
