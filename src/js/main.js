@@ -35,12 +35,7 @@ $(window).on('mousemove', function(e) {
 
 
 
-$(document).ready(function(){
-  $("a").click(function(){
-    $("#Menu").fadeOut();
-    $("#swipper-container").show();
-  });
-});
+
 
 var about = document.querySelector('.work')
 var test = document.querySelector('.swiper-container')
