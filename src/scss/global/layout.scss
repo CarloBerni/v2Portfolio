@@ -21,6 +21,12 @@ body {
 }
 
 
+//images cachées
+.none {
+  display: none;
+}
+
+
 body {
   @extend %font-settings;
   transform-style: preserve-3d;
@@ -28,9 +34,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-shadow: -0.035em 0 0 #F22613,  0.035em 0 0 #00FFFF;
   overflow: hidden;
 }
+
+//background vanta //
+#vantajs {
+  position: absolute;
+  z-index: -1;
+  width: 100% !important;
+  height: 100% !important;
+  canvas{
+    position:initial !important;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+#Menu{
+  position:absolute;
+}
+
 
 // === Menu <ul> =====
 .Menu-list {
@@ -38,23 +61,22 @@ body {
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
+  text-shadow: -0.035em 0 0 #F22613,  0.035em 0 0 #00FFFF;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: rotateX(-10deg) rotateY(20deg); // overwritten by JS
+  transform: rotateX(-10deg) rotateY(20deg); 
   a {
     text-decoration: none;
   }
 }
 
-// === Menu item =====
 .Menu-list-item {
   position: relative;
   color: transparent;
   cursor: pointer;
   
-  // === Split Line =====
   &::before {
     content: '';
     display: block;
@@ -72,7 +94,6 @@ body {
   }
 }
 
-// === Top/bottom mask =====
 .Mask {
   display: block;
   position: absolute;
@@ -85,15 +106,12 @@ body {
   span { display: block; }
 }
 
-// === Bottom mask specific =====
 .Mask + .Mask {
   top: $split-position - 0.1;
   height: 100 - $split-position + 0.1;
-  
   span { transform: translateY(-$split-position); }
 }
 
-// === Where the fun stuff happens =====
 .Menu-list-item:hover,
 .Menu-list-item:active {
   .Mask { color: #FFF; transform: skewX(12deg) translateX(5px); }
@@ -101,17 +119,74 @@ body {
   &::before { transform: scale(1); }
 }
 
-#vantajs {
-  width: 100% !important;
-  height: 100% !important;
-  canvas{
-    position:initial !important;
-    width: 100% !important;
-    height: 100% !important;
+
+
+
+
+
+//work//
+
+
+.swiper-container {
+  width: 100%;
+  
+}
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width:  100%;
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    .item {
+      flex: 1;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: none;
+      transition: all 0.8s ease;
+      &:hover {
+        flex: 3;
+      }
+    }
   }
 }
 
-#Menu{
-  position:absolute;
+// Image 
+.wrap-effect-1 {
+  .item {
+    &:first-of-type {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4185141/galshir-cactus-coffee.png');
+    }
+    &:nth-of-type(2) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/6146136/galshir-tea-biscuit_2x.png');
+    }
+    &:nth-of-type(3) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/4473482/galshir-dog-walker.gif');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
+    }
+    
+  }
 }
+
+
+
+
+
+
+
+
+
+
 

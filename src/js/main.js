@@ -20,6 +20,8 @@ $(window).on('mousemove', function(e) {
   //poster transform
   $menu.css('transform', transformPoster);
 
+  var $item = $('.item')
+
   //parallax for each layer
   $item.each(function() {
     var $this = $(this),
@@ -36,8 +38,16 @@ $(window).on('mousemove', function(e) {
 $(document).ready(function(){
   $("a").click(function(){
     $("#Menu").fadeOut();
+    $("#swipper-container").show();
   });
 });
+
+var about = document.querySelector('.work')
+var test = document.querySelector('.swiper-container')
+  about.addEventListener('click', function () {
+    test.classList.remove('none')
+  })
+
 
 
 // adding the plug
@@ -48,6 +58,7 @@ VANTA.WAVES({
   color: 0x0,
   shininess: 150.00,
   waveSpeed: 0.50,
-  zoom: 0.81
+  zoom: 0.81,
+  
 })
 
