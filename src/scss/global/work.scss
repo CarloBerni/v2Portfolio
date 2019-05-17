@@ -1,0 +1,68 @@
+%font-settings {
+  font-family: "kanit";
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+html,
+body {
+  width: 100vw;
+  height: 100vh; 
+}
+
+
+
+//work//
+
+
+.swiper-container {
+  width: 80%;
+  
+}
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width:  100%;
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+    .item {
+      flex: 1;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: none;
+      transition: all 0.8s ease;
+      &:hover {
+        flex: 5;
+      }
+    }
+  }
+}
+
+// Image 
+.wrap-effect {
+  .item {
+    &:first-of-type {
+      background-image: url('/assets/ToTheTop.gif');
+    }
+    &:nth-of-type(2) {
+      background-image: url('/assets/Canon.gif');
+    }
+    &:nth-of-type(3) {
+      background-image: url('/assets/socomptoirWork.jpg');
+    }
+    &:nth-of-type(4) {
+      background-image: url('https://cdn.dribbble.com/users/729829/screenshots/5743606/gal-shir-scooter_2x.png');
+    }  
+  }
+}

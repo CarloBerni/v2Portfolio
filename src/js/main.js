@@ -37,14 +37,6 @@ $(window).on('mousemove', function(e) {
 
 
 
-var about = document.querySelector('.work')
-var test = document.querySelector('.swiper-container')
-  about.addEventListener('click', function () {
-    test.classList.remove('none')
-  })
-
-
-
 // adding the plug
 
 
